@@ -50,3 +50,32 @@ To run this project locally, clone the repository and follow these steps:
 ### 1. Install Dependencies
 ```bash
 npm install
+```
+**2. Environment Variables**
+Create a .env file in the root directory and add your specific API keys. Do not commit this file to version control.
+```bash
+Code snippet
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
+VITE_GEMINI_API_KEY=your_gemini_api_key
+```
+**3. Start the Development Server**
+```Bash
+npm run dev
+```
+**🗺️ Routing Structure**
+* **/ - Landing Page & Google Login**
+
+* **/dashboard - Main Feed (The Live Radar)**
+
+* **/create - Create Beacon Modal/Page**
+
+* **/beacon/:id - The Lobby (Real-time Chat Room)**
+
+**🔮 Future Scope**
+Geo-fencing validation to ensure users are physically on campus.
+
+Reputation System to encourage reliable attendance.
+
+Calendar Sync for planned study sessions.
