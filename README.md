@@ -1,16 +1,52 @@
-# React + Vite
+# JoinIn 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **The "Just-in-Time" Connection Layer for the SRM AP Campus.**
+> *Built for the Code For Connection (Web/Mobile Development) Hackathon.*
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 The Problem & Solution
 
-## React Compiler
+**The Context:** Students at SRM AP are surrounded by thousands of peers but often eat alone, study alone, or struggle to find teammates due to the high social friction of asking, "Can I join you?"
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**The Solution:** JoinIn bridges this gap by allowing students to broadcast temporary "Beacons" of intent (e.g., "Studying C++ @ Library"). Peers can view the live radar and instantly join these beacons, breaking the ice before they even meet.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Core Features
+
+### 1. The Velvet Rope (Authentication)
+* **Exclusive Access:** Strict domain restriction using Google Sign-In via Firebase Auth. Only users with valid `@srmap.edu.in` email addresses can access the platform.
+* **Auto-Profiles:** Seamlessly generates user profiles by pulling Display Names and Photo URLs directly from Google.
+
+### 2. The Live Radar (Dashboard)
+* **Dynamic Feed:** A clean, card-based interface displaying active beacons across the campus.
+* **Targeted Filtering:** Sort beacons by categories such as Study 📚, Food 🍔, Chill 🎮, and Sports 🏏.
+
+### 3. Beacon Creation
+* **Rapid Setup:** Users can broadcast an activity, select a location from campus dropdowns (e.g., Library, Adarsh Mess), and set an auto-expiry timer (1-2 hours).
+* **Smart Party Sizing:** The system precisely calculates and displays the exact number of *additional* spots needed, automatically excluding the host from the remaining participant count.
+
+### 4. The Lobby & GenAI Icebreakers
+* **Instant Connection:** Clicking "Join" drops the user into a temporary, real-time group chat specific to that Beacon.
+* **AI-Powered Icebreakers:** Integrated with the **Google Gemini Flash API**, the system automatically posts a context-aware, funny one-liner into the chat based on the chosen activity to eliminate initial awkwardness.
+
+---
+
+## 🛠️ Technical Stack
+
+* **Frontend:** React + Vite (Optimized for speed)
+* **Styling:** Tailwind CSS (Clean, minimalist, and responsive UI) + Lucide React (Icons)
+* **State Management:** React Context API
+* **Backend & Database:** Firebase (Firestore + Authentication)
+* **AI Integration:** Google Gemini Flash API (via `@google/generative-ai` SDK)
+
+---
+
+## 🚀 Local Development Setup
+
+To run this project locally, clone the repository and follow these steps:
+
+### 1. Install Dependencies
+```bash
+npm install
