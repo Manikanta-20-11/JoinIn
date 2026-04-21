@@ -1,7 +1,7 @@
 🚀 Project Name: JoinIn
 
 Hackathon Track: Code For Connection (Web/Mobile Development) Tagline: The "Just-in-Time" Connection Layer for SRM AP Campus.  
-+1
+
 
 1.  The Problem (Why this exists)
 
