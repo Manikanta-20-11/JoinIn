@@ -64,7 +64,7 @@ VITE_GEMINI_API_KEY=your_gemini_api_key
 ```Bash
 npm run dev
 ```
-**🗺️ Routing Structure**
+## 🗺️ Routing Structure
 * **/ - Landing Page & Google Login**
 
 * **/dashboard - Main Feed (The Live Radar)**
@@ -73,7 +73,7 @@ npm run dev
 
 * **/beacon/:id - The Lobby (Real-time Chat Room)**
 
-**🔮 Future Scope**
+## 🔮 Future Scope
 Geo-fencing validation to ensure users are physically on campus.
 
 Reputation System to encourage reliable attendance.
