@@ -5,6 +5,12 @@
 
 ---
 
+## 🌐 Live Demo
+
+🚀 https://joinin-srm.web.app/
+
+---
+
 ## 🎯 The Problem & Solution
 
 **The Context:** Students at SRM AP are surrounded by thousands of peers but often eat alone, study alone, or struggle to find teammates due to the high social friction of asking, "Can I join you?"
